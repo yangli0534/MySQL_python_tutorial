@@ -5,13 +5,14 @@
 @time: 2021-04-27
 
 """
-
 from getpass import getpass
 from mysql.connector import connect, Error
+
 
 movie_id = input("Enter movie id: ")
 reviewer_id = input("Enter reviewer id: ")
 new_rating = input("Enter new rating: ")
+
 update_query = """
 UPDATE
     ratings
